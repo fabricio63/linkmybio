@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>my link tree</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<style>
+body {
+	background-image: url("https://www.partypacks.co.uk/images/products/product_77690_1_orig.jpg");
+        background-repeat:no-repeat;
+       background-size:cover;
+} 
+button {
+  background-color: #FFFFFF; 
+  border: none;
+  padding: 30px 90px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+}
+</style>
+<body>
+<font color="white">
+<div class="jumbotron text-center">
+    
+    <center><img src= "{{miimagen}}" ></center>
+    
+    <h1 class="display-3"><center>{{name}}</center></h1>
+    
+    <p class="lead">
+        <center>{{shortbio}}</center>>
+    </p>
+</font>
+<font color = "blue">
+    <center><button id="myButton" class="btn-lg btn-success" >{{facebook}}</button></center>
+
+    <script type="text/javascript">
+        document.getElementById("myButton").onclick = function () {
+            location.href = "{{linkf}}";
+        };
+    </script>
+</font>
+    <br>
+</br>
+<font color = "purple" > 
+    <center><button id="myButto" class="btn-lg btn-success" > {{instagram}}</button></center>
+
+    <script type="text/javascript">
+        document.getElementById("myButto").onclick = function () {
+            location.href = "{{linkg}}";
+        };
+    </script>
+</font>
+</div>
+
+    
+
+</body>
+</html>

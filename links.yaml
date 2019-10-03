@@ -1,0 +1,20 @@
+picture: "static/kid.png"
+name: "Fabricio Amadeo Juarez Giron"
+shortbio: "I study computer science in universidad francisco marroquin and im 18 years old"
+links:
+    facebook:
+        enable: True
+        link: "https://www.facebook.com/fabricioamadeo.juarezgiron"
+        description: "check my facebook"
+    instagram:
+        enable: True
+        link: "https://www.instagram.com/fabriciojuarezg/"
+        description: "check my instagram"
+    blog:
+        enable: False
+        link: "lorem ipsum"
+        description: "lorem ipsum dorem"
+    etc:
+        enable: False
+        link: "http://etc.etc"
+        description: "any other link you want your followers to see"
