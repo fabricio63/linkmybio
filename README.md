@@ -90,7 +90,33 @@ See you can add any style to your own project. These are only ideas.
 
 # Usage
 
-> put your code here
+> this is my code
+from flask import Flask, jsonify, render_template, request
+import os,optparse,sys
+import yaml
+
+app = Flask(__name__)
+
+code_file = "links.yaml"
+with open(code_file) as yml:
+    yml_file = yaml.load(yml)
+links = yml_file['links']
+
+
+@app.route("/")
+def home():
+    
+    return render_template("home.html", links = links)
+
+debug = True
+app.run(host="0.0.0.0",debug=debug)
+
+to make it work you have to:
+-   have flask and pyyaml installed
+-   you have to run it in the folder that you download my repo
+-   the yaml is in the main folder while the htmls are in the templates folder and the image is in the static folder
+-   the command you have to type python bio.py
+
 
 
 # Extras:
