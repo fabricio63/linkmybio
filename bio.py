@@ -14,8 +14,7 @@ linkf = face['link']
 ig = links['instagram']
 descriptiong = ig['description']
 linkg = ig['link']
-print(linkf)
-print(linkg)
+
 @app.route("/")
 def home():
     
